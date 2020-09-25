@@ -20,7 +20,7 @@ class MovieHorizontal extends StatelessWidget {
         pageSnapping: false,
         controller: PageController(
           initialPage: 1,
-          viewportFraction: 0.3,
+          viewportFraction: 0.2,
         ),
         children: _tarjetas(), //😠 no se pone dentro de corchetes
       ),
@@ -40,9 +40,16 @@ class MovieHorizontal extends StatelessWidget {
                 placeholder: AssetImage('assets/img/load2.gif'),
                 fit: BoxFit.cover,
                 //cambiar el tamaño del alto
-                height: 100,
+                height: 135,
               ),
             ),
+            SizedBox(
+              height: 5.0,
+            ),
+            Text(
+              peli.title,
+              overflow: TextOverflow.ellipsis,
+            )
           ],
         ),
       );

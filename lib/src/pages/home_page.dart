@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
                 fontSize: 15),
           ),
           SizedBox(
-            height: 5.0,
+            height: 8.0,
           ),
           FutureBuilder(
               future: peliculasProv.getInPopular(),
